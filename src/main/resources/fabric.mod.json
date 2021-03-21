@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "sneaknetherportals",
+  "version": "${version}",
+  "name": "SneakNetherPortals",
+  "description": "Avoid accidentally entering nether portals by having to sneak to use them!",
+  "authors": [
+    "Luligabi"
+  ],
+  "contact": {
+    "website": "c",
+    "repo": "d"
+  },
+  "license": "MIT",
+  "icon": "assets/sneaknetherportals/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "me.luligabi.sneaknetherportals.client.SneakNetherPortalsClient"
+    ],
+    "main": [
+      "me.luligabi.sneaknetherportals.SneakNetherPortals"
+    ]
+  },
+  "mixins": [
+    "sneaknetherportals.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.16.5"
+  }
+}
