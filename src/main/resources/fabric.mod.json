@@ -16,9 +16,6 @@
   "icon": "assets/sneaknetherportals/icon.png",
   "environment": "*",
   "entrypoints": {
-    "client": [
-      "me.luligabi.sneaknetherportals.client.SneakNetherPortalsClient"
-    ],
     "main": [
       "me.luligabi.sneaknetherportals.SneakNetherPortals"
     ]
