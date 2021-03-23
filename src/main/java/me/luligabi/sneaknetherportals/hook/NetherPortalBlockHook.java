@@ -1,6 +1,5 @@
 package me.luligabi.sneaknetherportals.hook;
 
-import me.luligabi.sneaknetherportals.SimpleConfig;
 import me.luligabi.sneaknetherportals.SneakNetherPortals;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.Entity;
