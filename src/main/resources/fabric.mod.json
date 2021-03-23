@@ -8,9 +8,9 @@
     "Luligabi"
   ],
   "contact": {
-    "website": "c",
-    "repo": "d",
-    "issues": ""
+    "website": "https://www.curseforge.com/minecraft/mc-mods/sneak-nether-portals",
+    "repo": "github.com/Luligabi1/SneakNetherPortals",
+    "issues": "github.com/Luligabi1/SneakNetherPortals/issues"
   },
   "license": "MIT",
   "icon": "assets/sneaknetherportals/icon.png",
