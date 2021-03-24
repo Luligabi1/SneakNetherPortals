@@ -14,7 +14,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 public class NetherPortalBlockHook {
 
-
     public static void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity, CallbackInfo info) {
         if (!entity.hasVehicle() && !entity.hasPassengers() && entity.canUsePortals()) {
             if(entity.getType() == EntityType.PLAYER) {
