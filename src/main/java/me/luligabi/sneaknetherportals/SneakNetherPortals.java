@@ -12,8 +12,8 @@ public class SneakNetherPortals implements ModInitializer {
                 "# Whether the mod should warn you if you are on a portal, but not using it correctly.\n" +
                 "sendWarningMessage=true\n\n" +
 
-                "# Time on ticks it takes to use the portal. 20 ticks = 1 second.\n" +
-                "teleportDelay=100\n\n" +
+                "# Time on ticks it takes to use the portal. 20 ticks = 1 second. This will affect only players.\n" +
+                "teleportDelay=1\n\n" +
 
                 "# Inverts the behavior from 'shift to use portal' to 'no shift to use portal'.\n" +
                 "invertBehavior=false\n\n";

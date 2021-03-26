@@ -1,3 +1,4 @@
 {
-  "message.sneaknetherportals.warning": "Sneak to use the Portal!"
+  "message.sneaknetherportals.warning": "Sneak to use the Portal!",
+  "message.sneaknetherportals.warning.inverted": "Un-Sneak to use the Portal!"
 }
