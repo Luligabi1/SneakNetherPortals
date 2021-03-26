@@ -1,5 +1,6 @@
 package me.luligabi.sneaknetherportals.mixin;
 
+import me.luligabi.sneaknetherportals.SneakNetherPortals;
 import net.minecraft.entity.player.PlayerEntity;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -11,6 +12,6 @@ public class PlayerEntityMixin {
 
     @Inject(method = "getMaxNetherPortalTime", at = @At("HEAD"), cancellable = true)
     public void getMaxNetherPortalTime(CallbackInfoReturnable<Integer> cir) {
-        cir.setReturnValue(1);
+        cir.setReturnValue(new SneakNetherPortals().getConfig().getOrDefault("teleportDelay", 1));
     }
 }

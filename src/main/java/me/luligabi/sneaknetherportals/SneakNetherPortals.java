@@ -8,7 +8,15 @@ public class SneakNetherPortals implements ModInitializer {
 
     private String provider(String filename) {
         return "# Sneak Nether Portals Configuration File\n\n" +
-                "sendWarningMessage=true";
+
+                "# Whether the mod should warn you if you are on a portal, but not using it correctly.\n" +
+                "sendWarningMessage=true\n\n" +
+
+                "# Time on ticks it takes to use the portal. 20 ticks = 1 second.\n" +
+                "teleportDelay=100\n\n" +
+
+                "# Inverts the behavior from 'shift to use portal' to 'no shift to use portal'.\n" +
+                "invertBehavior=false\n\n";
     }
 
     @Override
