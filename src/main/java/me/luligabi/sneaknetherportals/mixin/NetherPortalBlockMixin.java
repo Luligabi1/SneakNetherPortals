@@ -16,7 +16,7 @@ public class NetherPortalBlockMixin {
 
     @Inject(method = "onEntityCollision", at = @At("HEAD"), cancellable = true)
     private void injectOnEntityCollision(BlockState state, World world, BlockPos pos, Entity entity, CallbackInfo info) {
-        NetherPortalBlockHook.onEntityCollision(state, world, pos, entity, info);
+        NetherPortalBlockHook.onEntityCollision(pos, entity, info);
         info.cancel();
     }
 }
