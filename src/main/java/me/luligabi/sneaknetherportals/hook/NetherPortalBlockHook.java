@@ -7,7 +7,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.text.Style;
-import net.minecraft.text.TranslatableText;
+import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -40,9 +40,9 @@ public class NetherPortalBlockHook {
     private static void sendWarningMessage(PlayerEntity playerEntity) {
         if(new SneakNetherPortals().getConfig().getOrDefault("sendWarningMessage", true)) {
             if(new SneakNetherPortals().getConfig().getOrDefault("invertBehavior", false)) {
-                playerEntity.sendMessage(new TranslatableText("message.sneaknetherportals.warning.inverted").setStyle(Style.EMPTY.withColor(Formatting.RED)), true);
+                playerEntity.sendMessage(Text.translatable("message.sneaknetherportals.warning.inverted").setStyle(Style.EMPTY.withColor(Formatting.RED)), true);
             } else {
-                playerEntity.sendMessage(new TranslatableText("message.sneaknetherportals.warning").setStyle(Style.EMPTY.withColor(Formatting.RED)), true);
+                playerEntity.sendMessage(Text.translatable("message.sneaknetherportals.warning").setStyle(Style.EMPTY.withColor(Formatting.RED)), true);
             }
         }
     }
