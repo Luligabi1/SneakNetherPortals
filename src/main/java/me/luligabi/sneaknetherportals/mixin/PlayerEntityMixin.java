@@ -12,6 +12,6 @@ public class PlayerEntityMixin {
 
     @Inject(method = "getMaxNetherPortalTime", at = @At("HEAD"), cancellable = true)
     public void getMaxNetherPortalTime(CallbackInfoReturnable<Integer> cir) {
-        cir.setReturnValue(new SneakNetherPortals().getConfig().getOrDefault("teleportDelay", 1));
+        cir.setReturnValue(SneakNetherPortals.getInstance().getConfig().getOrDefault("teleportDelay", 1));
     }
 }
