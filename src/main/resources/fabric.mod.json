@@ -27,9 +27,9 @@
     "sneaknetherportals.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.12.6",
+    "fabricloader": ">=0.12.11",
     "fabric": "*",
-    "minecraft": "1.19.x"
+    "minecraft": "1.20.x"
   },
   "conflicts": {
     "immersive_portals": "*"
